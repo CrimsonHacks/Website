@@ -1,0 +1,17 @@
+{
+  "name": "Website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CrimsonHacks/Website.git",
+  "author": "Sam Wight <samuelwight@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "git-scripts": "^0.2.1",
+    "surge": "^0.20.1"
+  },
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain testing.crimsonhacks.com"
+    }
+  }
+}
